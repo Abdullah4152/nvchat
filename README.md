@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="nvchat logo" src="Images/logo.jeg" width="120">
+  <img alt="nvchat logo" src="Images/logo.jpeg" width="120">
   <h3>The terminal-first client for NVIDIA NIM and local LLMs.</h3>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/platform-Windows-blue" alt="Platform"></a>
