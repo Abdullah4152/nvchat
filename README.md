@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="NVIDIA NIM Terminal Chat logo" src="images/logo.png" width="120">
+  <img alt="nvchat logo" src="images/logo.png" width="120">
   <h3>The terminal-first client for NVIDIA NIM and local LLMs.</h3>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/platform-Windows-blue" alt="Platform"></a>
@@ -8,7 +8,7 @@
 
 <br>
 
-nvchat is a Windows terminal application for talking to NVIDIA NIM models and other OpenAI-compatible LLM servers, run from the folder where you're working. It's built for researchers and developers who want a terminal-first workflow: ask questions, keep sessions, inspect files in the current workspace, use local models when privacy matters, and approve every file write or shell command before it happens.
+**nvchat** is a Windows terminal application for talking to NVIDIA NIM models and other OpenAI-compatible LLM servers, run from the folder where you're working. It's built for researchers and developers who want a terminal-first workflow: ask questions, keep sessions, inspect files in the current workspace, use local models when privacy matters, and approve every file write or shell command before it happens.
 
 **Principles:**
 
@@ -27,7 +27,7 @@ nvchat is a Windows terminal application for talking to NVIDIA NIM models and ot
 - **Skills** — load reusable Markdown instructions from `.nvchat/skills` with `/skill`
 
 > [!NOTE]
-> NIM Terminal Chat is a Windows PowerShell application — every command below assumes a PowerShell prompt on Windows.
+> nvchat is a Windows PowerShell application — every command below assumes a PowerShell prompt on Windows.
 
 ## Quickstart
 
@@ -37,8 +37,8 @@ Clone the project into a folder where you keep development tools — this guide 
 
 ~~~powershell
 Set-Location D:\tools
-git clone https://github.com/Abdullah4152/nvidia-nim-terminal-chat.git
-Set-Location .\nvidia-nim-terminal-chat
+git clone https://github.com/Abdullah4152/nvchat.git
+Set-Location .\nvchat
 npm install
 Unblock-File .\scripts\nvidia-chat.ps1
 ~~~
@@ -52,7 +52,7 @@ notepad $PROFILE
 Add this line to the profile file (update the path if you cloned somewhere else), save, and close Notepad:
 
 ~~~powershell
-function nvchat { & "D:\tools\nvidia-nim-terminal-chat\scripts\nvidia-chat.ps1" @args }
+function nvchat { & "D:\tools\nvchat\scripts\nvidia-chat.ps1" @args }
 ~~~
 
 Reload the profile, then start the app from any folder — that folder becomes your workspace for `/file`, `/search`, and approved writes:
@@ -139,7 +139,7 @@ Scroll the transcript with Up/Down, Page Up/Page Down, or your mouse wheel.
 ## Project layout
 
 ~~~text
-nvidia-nim-terminal-chat/
+nvchat/
 ├── src/
 │   └── nvchat.js              Main terminal UI and LLM client
 ├── scripts/
@@ -192,7 +192,7 @@ Built with Node.js and the Blessed terminal UI library.
 
 ## Security & Privacy
 
-Two things NIM Terminal Chat is opinionated about: the model never writes or runs anything without your approval, and workspace access never leaves the folder you launched from.
+Two things nvchat is opinionated about: the model never writes or runs anything without your approval, and workspace access never leaves the folder you launched from.
 
 - File writes and shell commands always require a confirmation step before they happen.
 - Workspace file tools reject any path outside the folder where you launched the application.
