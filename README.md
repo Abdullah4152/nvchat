@@ -1,6 +1,6 @@
 <div align="center">
   <img alt="NVIDIA NIM Terminal Chat logo" src="images/logo.png" width="120">
-  <h3>The terminal-first client for NVIDIA NIM.</h3>
+  <h3>The terminal-first client for NVIDIA NIM and local LLMs.</h3>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/platform-Windows-blue" alt="Platform"></a>
   <a href="#"><img src="https://img.shields.io/badge/node-%3E%3D18-green" alt="Node"></a>
@@ -8,7 +8,7 @@
 
 <br>
 
-NVIDIA NIM Terminal Chat is a Windows terminal application for talking to NVIDIA NIM models and other OpenAI-compatible LLM servers, run from the folder where you're working. It's built for researchers and developers who want a terminal-first workflow: ask questions, keep sessions, inspect files in the current workspace, use local models when privacy matters, and approve every file write or shell command before it happens.
+nvchat is a Windows terminal application for talking to NVIDIA NIM models and other OpenAI-compatible LLM servers, run from the folder where you're working. It's built for researchers and developers who want a terminal-first workflow: ask questions, keep sessions, inspect files in the current workspace, use local models when privacy matters, and approve every file write or shell command before it happens.
 
 **Principles:**
 
