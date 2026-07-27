@@ -37,7 +37,7 @@ Clone the project into a folder where you keep development tools — this guide 
 
 ~~~powershell
 Set-Location D:\tools
-git clone https://github.com/Abdullah4152/nvchat.git
+git clone https://github.com/your-username/nvchat.git
 Set-Location .\nvchat
 npm install
 Unblock-File .\scripts\nvidia-chat.ps1
@@ -59,7 +59,7 @@ Reload the profile, then start the app from any folder — that folder becomes y
 
 ~~~powershell
 . $PROFILE
-PS C:\Users\abdul> nvchat
+PS C:\Users\username> nvchat
 ~~~
 
 The launcher checks for Node.js and installs its one runtime dependency the first time it runs.
